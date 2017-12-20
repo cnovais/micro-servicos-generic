@@ -1,0 +1,18 @@
+{
+  "name": "inputform-backend-master",
+  "version": "1.0.0",
+  "description": "[![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)",
+  "main": "index.js",
+  "dependencies": {
+    "serverless-dynamodb-local": "^0.2.26",
+    "serverless-offline": "^3.16.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "./node_modules/.bin/serverless offline -s dev",
+    "debug": "export SLS_DEBUG=* && node --debug ./node_modules/.bin/serverless offline -s dev",
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC"
+}
